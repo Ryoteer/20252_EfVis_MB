@@ -50,8 +50,11 @@ Material:
     - _QueueOffset: 0
     - _ShoreDepth: 0.375
     - _ShoreDistance: 0.75
+    - _WaterCoastDepth: 0.5
+    - _WaterCoastDistance: 2
     - _WaterNormalStrength: 1
     - _WaveAmount: 0.5
+    - _WaveAmount_1: 2
     m_Colors:
     - _DepthColor: {r: 0.076628685, g: 0.2621095, b: 0.3962264, a: 0}
     - _DistortionOffsetX: {r: 0.01, g: 0.0125, b: 0, a: 0}
