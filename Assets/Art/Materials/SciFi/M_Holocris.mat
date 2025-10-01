@@ -39,8 +39,9 @@ Material:
     m_Ints: []
     m_Floats:
     - _Frequency: 200
+    - _Scale: 1
     - _Speed: 0.075
     - _UsesTexture: 1
     m_Colors:
-    - _AlphaRange: {r: 0.625, g: 0.75, b: 0, a: 0}
+    - _AlphaRange: {r: 0.9, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
