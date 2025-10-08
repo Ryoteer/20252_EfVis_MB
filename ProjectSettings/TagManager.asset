@@ -8,9 +8,11 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
+  - Hand
+  - Interactable
   - 
   - 
   - 
@@ -33,10 +35,8 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - Walkable Surface
+  - Non-Walkable Surface
   m_SortingLayers:
   - name: Default
     uniqueID: 0
