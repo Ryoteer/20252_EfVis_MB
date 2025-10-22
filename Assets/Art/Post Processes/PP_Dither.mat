@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: PP_Outlines
-  m_Shader: {fileID: -6465566751694194690, guid: 96be893b2b2acff489a146ae8838eb48, type: 3}
+  m_Name: PP_Dither
+  m_Shader: {fileID: -6465566751694194690, guid: 5cfded9702f756b4d85340d7e8ed7201, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -37,8 +37,9 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Fix: 0.01
-    - _Thickness: 0.1
+    - _MaxDepth: 50
+    - _MinDepth: 0
     m_Colors:
-    - _Color: {r: 0, g: 0, b: 0, a: 0}
+    - _DitherOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _DitherTiling: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []

@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: de640fe3d0db1804a85f9fc8f5cadab6, type: 3}
-  m_Name: 20252_EfVis_MB_UQ_Renderer
+  m_Name: 20252_EfVis_MB_UQ_Renderer_Hand
   m_EditorClassIdentifier: 
   debugShaders:
     debugReplacementPS: {fileID: 4800000, guid: cf852408f2e174538bcd9b7fda1c5ae7, type: 3}
@@ -107,10 +107,10 @@ MonoBehaviour:
   - {fileID: 3710223296328288181}
   - {fileID: -7600630568624331420}
   - {fileID: -3579221544117850445}
+  - {fileID: 2872486453764354116}
   - {fileID: 5404292472604637168}
   - {fileID: -8245461483332776986}
-  - {fileID: 2872486453764354116}
-  m_RendererFeatureMap: cd9e39ba4ad4bdab064d3cc6fb2fe20fb5c7062f6e5c7d3364e52b88c4228596b32e6e1af80c54cef0b7eae35ee7ff4ae6cbc89c773c928d44f0beea351fdd27
+  m_RendererFeatureMap: cd9e39ba4ad4bdab064d3cc6fb2fe20fb5c7062f6e5c7d3364e52b88c4228596b32e6e1af80c54ce44f0beea351fdd27f0b7eae35ee7ff4ae6cbc89c773c928d
   m_UseNativeRenderPass: 0
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
@@ -212,7 +212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d613f08f173d4dd895bb07b3230baa9, type: 3}
   m_Name: Fog
   m_EditorClassIdentifier: 
-  m_Active: 1
+  m_Active: 0
   passMaterial: {fileID: 2100000, guid: 3f9b2712ea4f1524ca58a848ab53685e, type: 2}
   injectionPoint: 550
   requirements: 4

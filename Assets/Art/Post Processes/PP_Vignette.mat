@@ -41,8 +41,8 @@ Material:
     - _Intensity: 1
     - _Opacity: 1
     - _Scale: 10
-    - _VignetteScale: 0.1
-    - _VignetteSharpness: 0.05
+    - _VignetteScale: 0.025
+    - _VignetteSharpness: 0.0125
     - _Width: 0.5
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 0}

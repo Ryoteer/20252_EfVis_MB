@@ -21,7 +21,7 @@ MonoBehaviour:
     m_Value: {x: 0.5, y: 0.5}
   intensity:
     m_OverrideState: 1
-    m_Value: 0.45
+    m_Value: 0.33
   smoothness:
     m_OverrideState: 1
     m_Value: 0.25
@@ -49,7 +49,7 @@ MonoBehaviour:
     m_Value: 2
   intensity:
     m_OverrideState: 1
-    m_Value: 0.25
+    m_Value: 0.33
   clamp:
     m_OverrideState: 1
     m_Value: 0.05
@@ -70,7 +70,6 @@ MonoBehaviour:
   - {fileID: 5789963170058364008}
   - {fileID: 5645172321799436715}
   - {fileID: 1160996597283887245}
-  - {fileID: 6279241123365752915}
   - {fileID: -1127138125634367101}
   - {fileID: -3183157567380297726}
 --- !u!114 &1160996597283887245
@@ -130,8 +129,8 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: {r: 1, g: 1, b: 1, a: 1}
   highQualityFiltering:
-    m_OverrideState: 1
-    m_Value: 1
+    m_OverrideState: 0
+    m_Value: 0
   downscale:
     m_OverrideState: 0
     m_Value: 0
@@ -163,7 +162,7 @@ MonoBehaviour:
     m_Value: 1
   gaussianStart:
     m_OverrideState: 1
-    m_Value: 25
+    m_Value: 30
   gaussianEnd:
     m_OverrideState: 1
     m_Value: 50
@@ -171,8 +170,8 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 1
   highQualitySampling:
-    m_OverrideState: 1
-    m_Value: 1
+    m_OverrideState: 0
+    m_Value: 0
   focusDistance:
     m_OverrideState: 1
     m_Value: 5
@@ -207,31 +206,3 @@ MonoBehaviour:
   intensity:
     m_OverrideState: 1
     m_Value: 0.125
---- !u!114 &6279241123365752915
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5e1dc532bcb41949b58bc4f2abfbb7e, type: 3}
-  m_Name: LensDistortion
-  m_EditorClassIdentifier: 
-  active: 1
-  intensity:
-    m_OverrideState: 1
-    m_Value: 0.33
-  xMultiplier:
-    m_OverrideState: 0
-    m_Value: 1
-  yMultiplier:
-    m_OverrideState: 0
-    m_Value: 1
-  center:
-    m_OverrideState: 0
-    m_Value: {x: 0.5, y: 0.5}
-  scale:
-    m_OverrideState: 1
-    m_Value: 1.05
