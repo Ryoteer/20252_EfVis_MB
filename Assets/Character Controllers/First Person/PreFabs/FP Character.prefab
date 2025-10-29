@@ -130,19 +130,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _mouseSenitivity: 100
   _head: {fileID: 3114038930532530658}
+  _activatetKey: 113
+  _changetKey: 101
   _interactKey: 102
   _jumpKey: 32
   _interactDistance: 1.5
   _interactMask:
     serializedVersion: 2
-    m_Bits: 1073741824
+    m_Bits: 128
   _jumpForce: 7.5
   _moveRange: 0.5
   _moveSpeed: 4.5
   _moveMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 2147483648
   _groundDistance: 0.25
   _groundMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1073741824
+  _swordRenderer: {fileID: 0}
+  _auraTransitionTime: 1
+  _auraFloatName: _AuraAmount
+  _auraColorName: _AuraColor
+  _swordAnimator: {fileID: 0}
+  _stateBoolName: isActivated
+  _swordVFX: {fileID: 0}
+  _vfxAuraColorName: AuraColor
+  _vfxTrailColorName: TrailColor

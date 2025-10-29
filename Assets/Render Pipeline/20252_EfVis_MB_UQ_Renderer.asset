@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d613f08f173d4dd895bb07b3230baa9, type: 3}
   m_Name: Vignette
   m_EditorClassIdentifier: 
-  m_Active: 1
+  m_Active: 0
   passMaterial: {fileID: 2100000, guid: f4f4a79ae631c9b409d5eac9da451d83, type: 2}
   injectionPoint: 600
   requirements: 4
@@ -212,7 +212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d613f08f173d4dd895bb07b3230baa9, type: 3}
   m_Name: Fog
   m_EditorClassIdentifier: 
-  m_Active: 1
+  m_Active: 0
   passMaterial: {fileID: 2100000, guid: 3f9b2712ea4f1524ca58a848ab53685e, type: 2}
   injectionPoint: 550
   requirements: 4

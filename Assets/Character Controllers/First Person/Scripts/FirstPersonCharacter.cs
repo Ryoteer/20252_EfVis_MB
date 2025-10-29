@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.VFX;
 
 [RequireComponent(typeof(Rigidbody))]
 public class FirstPersonCharacter : MonoBehaviour
@@ -12,6 +13,8 @@ public class FirstPersonCharacter : MonoBehaviour
     [SerializeField] private Transform _head;
 
     [Header("<color=#6699CC>Inputs</color>")]
+    [SerializeField] private KeyCode _activatetKey = KeyCode.Q;
+    [SerializeField] private KeyCode _changeKey = KeyCode.E;
     [SerializeField] private KeyCode _interactKey = KeyCode.F;
     [SerializeField] private KeyCode _jumpKey = KeyCode.Space;
 
@@ -29,12 +32,26 @@ public class FirstPersonCharacter : MonoBehaviour
     [SerializeField] private float _groundDistance = 0.25f;
     [SerializeField] private LayerMask _groundMask;
 
+    [Header("<color=#6699CC>Renderer</color>")]
+    [SerializeField] private Renderer _swordRenderer;
+    [SerializeField] private float _auraTransitionTime = 1.0f;
+    [SerializeField] private string _auraFloatName = "_AuraAmount";
+    [SerializeField] private string _auraColorName = "_AuraColor";
+    [SerializeField] private Animator _swordAnimator;
+    [SerializeField] private string _stateBoolName = "isActivated";
+    [SerializeField] private VisualEffect _swordVFX;
+    [SerializeField] private string _VFXAuraColorName = "AuraColor";
+    [SerializeField] private string _VFXTrailColorName = "TrailColor";
+
+    private bool _isSwordEnabled = false, _isChangingElement = false;
     private float _mouseX = 0.0f;
     private Vector3 _dir = new(), _groundOffset = new(), _mouseInputs = new();
 
     private FirstPersonCamera _camera;
+    private Material _swordMaterial;
     private Rigidbody _rb;
 
+    private Color _actualColor, _newColor;
     private Ray _groundRay, _interactRay, _moveRay;
     private RaycastHit _interactHit;
 
@@ -51,6 +68,11 @@ public class FirstPersonCharacter : MonoBehaviour
     {
         _camera = Camera.main.GetComponent<FirstPersonCamera>();
         _camera.Head = _head;
+
+        _swordMaterial = _swordRenderer.material;
+        _actualColor = _swordMaterial.GetColor(_auraColorName);
+        _swordVFX.SetVector4(_VFXAuraColorName, _actualColor);
+        _swordVFX.SetVector4(_VFXTrailColorName, _actualColor);
     }
 
     private void Update()
@@ -70,6 +92,16 @@ public class FirstPersonCharacter : MonoBehaviour
         {
             Interaction();
         }
+        else if (Input.GetKeyDown(_activatetKey))
+        {
+            _isSwordEnabled = !_isSwordEnabled;
+
+            _swordAnimator.SetBool(_stateBoolName, _isSwordEnabled);
+        }
+        else if(Input.GetKeyDown(_changeKey) && !_isChangingElement)
+        {
+            StartCoroutine(ChangeAuraColor());
+        }
 
         if (Input.GetKeyDown(_jumpKey) && !IsOnAir())
         {
@@ -83,6 +115,35 @@ public class FirstPersonCharacter : MonoBehaviour
         {
             Movement(_dir);
         }
+    }
+
+    private IEnumerator ChangeAuraColor()
+    {
+        _isChangingElement = true;
+
+        _newColor = new Color(Random.Range(0.0f, 1.0f),
+                              Random.Range(0.0f, 1.0f), 
+                              Random.Range(0.0f, 1.0f), 
+                              1.0f);
+
+        float t = 0.0f;
+
+        while(t < 1.0f)
+        {
+            t += Time.deltaTime / _auraTransitionTime;
+
+            _swordMaterial.SetColor(_auraColorName, Color.Lerp(_actualColor, _newColor, t));
+            _swordVFX.SetVector4(_VFXAuraColorName, Color.Lerp(_actualColor, _newColor, t));
+            _swordVFX.SetVector4(_VFXTrailColorName, Color.Lerp(_actualColor, _newColor, t));
+
+            yield return null;
+        }
+
+        _swordVFX.SendEvent("OnElementChange");
+
+        _actualColor = _newColor;
+
+        _isChangingElement = false;
     }
 
     private bool IsOnAir()

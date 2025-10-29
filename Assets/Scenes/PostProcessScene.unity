@@ -171,7 +171,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 441782976924889670, guid: 0bfdbeac43dfdf147b9d736c5d06d9dd, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2205812901771391442, guid: 0bfdbeac43dfdf147b9d736c5d06d9dd, type: 3}
+      propertyPath: m_ClearDepth
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4631617287061172361, guid: 0bfdbeac43dfdf147b9d736c5d06d9dd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -218,6 +222,16 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0bfdbeac43dfdf147b9d736c5d06d9dd, type: 3}
+--- !u!95 &399225438 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9164998056684296183, guid: 0bfdbeac43dfdf147b9d736c5d06d9dd, type: 3}
+  m_PrefabInstance: {fileID: 399225437}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &414832791 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 1722041744834097702, guid: 0bfdbeac43dfdf147b9d736c5d06d9dd, type: 3}
+  m_PrefabInstance: {fileID: 399225437}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &481798596
 GameObject:
   m_ObjectHideFlags: 0
@@ -321,7 +335,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7935621705294624109, guid: 80a2dabc6cf37f04a89162a89b6698e9, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -494,6 +508,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spring Arm
       objectReference: {fileID: 0}
+    - target: {fileID: 8664190898909292149, guid: d732cbba8af02ec40b355a8cad0e574c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -605,7 +623,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 225575445474713242, guid: 9e71a85dcfd63f944ab3aee952cc8842, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 597715847016325953, guid: 9e71a85dcfd63f944ab3aee952cc8842, type: 3}
       propertyPath: m_LocalPosition.x
@@ -648,6 +666,18 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4488550506240808719, guid: 9e71a85dcfd63f944ab3aee952cc8842, type: 3}
+      propertyPath: _swordVFX
+      value: 
+      objectReference: {fileID: 1114201458}
+    - target: {fileID: 4488550506240808719, guid: 9e71a85dcfd63f944ab3aee952cc8842, type: 3}
+      propertyPath: _swordAnimator
+      value: 
+      objectReference: {fileID: 399225438}
+    - target: {fileID: 4488550506240808719, guid: 9e71a85dcfd63f944ab3aee952cc8842, type: 3}
+      propertyPath: _swordRenderer
+      value: 
+      objectReference: {fileID: 414832791}
+    - target: {fileID: 4488550506240808719, guid: 9e71a85dcfd63f944ab3aee952cc8842, type: 3}
       propertyPath: _mouseSenitivity
       value: 1000
       objectReference: {fileID: 0}
@@ -656,6 +686,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e71a85dcfd63f944ab3aee952cc8842, type: 3}
+--- !u!2083052967 &1114201458 stripped
+VisualEffect:
+  m_CorrespondingSourceObject: {fileID: 7777900472660880395, guid: 0bfdbeac43dfdf147b9d736c5d06d9dd, type: 3}
+  m_PrefabInstance: {fileID: 399225437}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1721119250
 GameObject:
   m_ObjectHideFlags: 0
