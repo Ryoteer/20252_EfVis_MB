@@ -66,7 +66,7 @@ GameObject:
   - component: {fileID: 2333446660456698580}
   - component: {fileID: 5346554140709968351}
   - component: {fileID: 6463023100856135124}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Visual Effect
   m_TagString: Untagged
   m_Icon: {fileID: 0}

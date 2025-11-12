@@ -86,6 +86,23 @@ MonoBehaviour:
   injectionPoint: 550
   requirements: 4
   passIndex: 0
+--- !u!114 &-2922656459179830647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d613f08f173d4dd895bb07b3230baa9, type: 3}
+  m_Name: Rain
+  m_EditorClassIdentifier: 
+  m_Active: 0
+  passMaterial: {fileID: 2100000, guid: 11abaaa3b27e7ae46ac58b974d988c7d, type: 2}
+  injectionPoint: 600
+  requirements: 4
+  passIndex: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -109,8 +126,9 @@ MonoBehaviour:
   - {fileID: 2872486453764354116}
   - {fileID: 5404292472604637168}
   - {fileID: -3579221544117850445}
+  - {fileID: -2922656459179830647}
   - {fileID: -8245461483332776986}
-  m_RendererFeatureMap: cd9e39ba4ad4bdab064d3cc6fb2fe20fb5c7062f6e5c7d3364e52b88c422859644f0beea351fdd27f0b7eae35ee7ff4ab32e6e1af80c54cee6cbc89c773c928d
+  m_RendererFeatureMap: cd9e39ba4ad4bdab064d3cc6fb2fe20fb5c7062f6e5c7d3364e52b88c422859644f0beea351fdd27f0b7eae35ee7ff4ab32e6e1af80c54ce89d2156e6fa370d7e6cbc89c773c928d
   m_UseNativeRenderPass: 0
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
