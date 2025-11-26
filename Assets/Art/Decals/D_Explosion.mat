@@ -69,17 +69,22 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _Alpha: 1
+    - _DecalAngleFadeSupported: 1
     - _DecalMeshBiasType: 0
     - _DecalMeshDepthBias: 0
     - _DecalMeshViewBias: 0
     - _DrawOrder: 0
-    - _EmissionIntensity: 0
+    - _EmissionIntensity: 1
     - _HeightAmplitude: 0
     - _MAOSBlend: 0.5
     - _NormalBlend: 0.5
     - _UsesSmoothness: 0
     m_Colors:
     - _BaseColor: {r: 0.1981132, g: 0.147613, b: 0.1259701, a: 0}
+    - _BaseCraterColor: {r: 0.1981132, g: 0.147613, b: 0.1259701, a: 0}
+    - _BaseEmissionColor: {r: 1, g: 0.4291208, b: 0, a: 0}
+    - _BlendEmissionColor: {r: 1, g: 0.1975295, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &5412372981206334190
 MonoBehaviour:
